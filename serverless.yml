@@ -6,8 +6,6 @@ inputs:
     topicId: 2c81e19a-4d49-489f-892f-c13dcf17bab1
   description: helloworld 空白模板函数
   eip: false
-  events:
-    - {}
   handler: index.main_handler
   initTimeout: 65
   memorySize: 128
