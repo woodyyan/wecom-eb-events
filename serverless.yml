@@ -1,0 +1,28 @@
+app: wecom-eb-events
+component: scf
+inputs:
+  cls:
+    logsetId: 7cb1c8d7-0a91-452f-95fe-78441855e24c
+    topicId: 2c81e19a-4d49-489f-892f-c13dcf17bab1
+  description: helloworld 空白模板函数
+  eip: false
+  events:
+    - {}
+  handler: index.main_handler
+  initTimeout: 65
+  memorySize: 128
+  msgTTL: 21600
+  name: wecom-eb-events
+  namespace: default
+  publicAccess: true
+  region: ap-chengdu
+  retryNum: 2
+  runtime: Python3.7
+  src: ./
+  timeout: 3
+  type: event
+name: ap-chengdu_default_wecom-eb-events
+org: '1307427535'
+stage: dev
+# When using this configuration file for deployment, make sure the file name is "serverless.yml".
+# For more information: https://github.com/serverless-components/tencent-scf/blob/master/docs/configure.md
